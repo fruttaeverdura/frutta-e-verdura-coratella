@@ -349,7 +349,7 @@ export default function App() {
           <div className="flex items-center gap-3">
             <div className="h-14 w-14 overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm">
               <img
-                src="/logonuovoraff.png"
+                src={`${import.meta.env.BASE_URL}logonuovoraff.png`}
                 alt="Frutta e Verdura di Marco Coratella"
                 className="h-full w-full object-contain p-1"
                 onError={(e) => {
@@ -436,7 +436,7 @@ export default function App() {
             <div className="w-full max-w-2xl rounded-[36px] border border-white/10 bg-white/10 p-6 shadow-2xl backdrop-blur md:p-8">
               <div className="aspect-[4/3] overflow-hidden rounded-[28px] bg-[linear-gradient(135deg,#f5f5f4_0%,#ffffff_40%,#fafaf9_100%)] shadow-inner">
                 <img
-                  src="/logonuovoraff.png"
+                  src={`${import.meta.env.BASE_URL}logonuovoraff.png`}
                   alt="Logo Frutta e Verdura di Marco Coratella"
                   className="h-full w-full object-contain p-4"
                   onError={(e) => {
