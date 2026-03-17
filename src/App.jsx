@@ -349,7 +349,7 @@ export default function App() {
           <div className="flex items-center gap-3">
             <div className="h-14 w-14 overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm">
               <img
-                src="/logonuovoraff.png""
+                src="/logonuovoraff.png"
                 alt="Frutta e Verdura di Marco Coratella"
                 className="h-full w-full object-contain p-1"
                 onError={(e) => {
