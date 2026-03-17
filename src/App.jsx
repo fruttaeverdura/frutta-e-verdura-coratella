@@ -442,7 +442,7 @@ export default function App() {
                   onError={(e) => {
                     e.currentTarget.style.display = "none";
                     e.currentTarget.parentElement.innerHTML =
-                      '<div class="flex h-full items-center justify-center px-6 text-center text-lg font-semibold text-neutral-500">Inserisci il logo in public/logo.png</div>';
+                      '<div class="flex h-full items-center justify-center px-6 text-center text-lg font-semibold text-neutral-500">Inserisci il logo in public/logonuovoraff.png</div>';
                   }}
                 />
               </div>
