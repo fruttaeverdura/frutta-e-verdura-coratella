@@ -436,7 +436,7 @@ export default function App() {
             <div className="w-full max-w-2xl rounded-[36px] border border-white/10 bg-white/10 p-6 shadow-2xl backdrop-blur md:p-8">
               <div className="aspect-[4/3] overflow-hidden rounded-[28px] bg-[linear-gradient(135deg,#f5f5f4_0%,#ffffff_40%,#fafaf9_100%)] shadow-inner">
                 <img
-                  src="/logo.png"
+                  src="/logonuovoraff.png"
                   alt="Logo Frutta e Verdura di Marco Coratella"
                   className="h-full w-full object-contain p-4"
                   onError={(e) => {
