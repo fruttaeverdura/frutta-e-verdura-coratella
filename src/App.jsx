@@ -5,94 +5,88 @@ const phoneLink = "393206089928";
 const businessEmail = "fruttaeverdurainfo@gmail.com";
 const businessAddress = "Via Giovane Italia, 38 – 76123 Andria (BT)";
 const instagramHandle = "fruttaeverdurashop";
+const minimumOrder = "€ 5,00";
+
+const sizeOptions = ["500 g", "1 kg", "1,5 kg", "2 kg", "3 kg", "5 kg", "Cartone"];
 
 const products = [
   {
     id: 1,
     name: "Melanzane grigliate",
     category: "Verdure cotte",
-    price: 1,
-    sizes: ["500 g", "1 kg", "2 kg", "3 kg", "4 kg"],
+    sizes: sizeOptions,
     description:
-      "Preparazione pronta all’uso, ideale per ristorazione, pizzerie, gastronomia e vendita al dettaglio.",
-    tags: ["Pronte", "Professionali", "Vaschette"],
+      "Preparazione pronta all’uso, ideale per ristorazione, gastronomie, pizzerie, caseifici e vendita diretta.",
+    tags: ["Pronte", "Grigliate", "Professionali"],
   },
   {
     id: 2,
     name: "Zucchine grigliate",
     category: "Verdure cotte",
-    price: 1,
-    sizes: ["500 g", "1 kg", "2 kg", "3 kg", "4 kg"],
+    sizes: sizeOptions,
     description:
-      "Lavorate con cura e confezionate in formati pratici per servizio veloce e gestione ordinata.",
-    tags: ["Grigliate", "Pratiche", "B2B"],
+      "Lavorate con cura e confezionate in formati pratici per una gestione più veloce e ordinata.",
+    tags: ["Vaschette", "Pratiche", "B2B"],
   },
   {
     id: 3,
     name: "Peperoni arrostiti",
     category: "Verdure cotte",
-    price: 1,
-    sizes: ["500 g", "1 kg", "2 kg", "3 kg", "4 kg"],
+    sizes: sizeOptions,
     description:
-      "Prodotto versatile per piatti pronti, panifici, rosticcerie e attività alimentari.",
-    tags: ["Arrostiti", "Selezionati", "Confezionati"],
+      "Prodotto versatile per banco, cucina e somministrazione, pensato per attività e clienti finali.",
+    tags: ["Arrostiti", "Selezionati", "Pronti"],
   },
   {
     id: 4,
     name: "Carote condite",
     category: "Verdure cotte",
-    price: 1,
-    sizes: ["500 g", "1 kg", "2 kg", "3 kg", "4 kg"],
+    sizes: sizeOptions,
     description:
-      "Soluzione pronta e ordinata per attività che cercano continuità, qualità e velocità di servizio.",
-    tags: ["Pronte", "Pulite", "Comode"],
+      "Soluzione comoda e pulita per chi cerca continuità, qualità e ordine nella vendita quotidiana.",
+    tags: ["Condite", "Pulite", "Comode"],
   },
   {
     id: 5,
     name: "Cicoria",
     category: "Verdure cotte",
-    price: 1,
-    sizes: ["500 g", "1 kg", "2 kg", "3 kg", "4 kg"],
+    sizes: sizeOptions,
     description:
-      "Preparazione adatta a privati, gastronomie e attività che necessitano forniture regolari.",
+      "Proposta richiesta e adatta a privati, gastronomie, ristoranti e forniture continuative.",
     tags: ["Tradizionale", "Richiesta", "Fornitura"],
   },
   {
     id: 6,
     name: "Bietole",
     category: "Verdure cotte",
-    price: 1,
-    sizes: ["500 g", "1 kg", "2 kg", "3 kg", "4 kg"],
+    sizes: sizeOptions,
     description:
       "Confezionamento pratico e presentazione pulita, pensati per semplificare il lavoro quotidiano.",
-    tags: ["Vaschette", "Pronte", "Fresh food"],
+    tags: ["Pronte", "Vaschette", "Qualità"],
   },
   {
     id: 7,
     name: "Friarielli",
     category: "Verdure cotte",
-    price: 1,
-    sizes: ["500 g", "1 kg", "2 kg", "3 kg", "4 kg"],
+    sizes: sizeOptions,
     description:
-      "Ideali per pizzerie, ristoranti e attività che cercano qualità e rapidità nell’ordine.",
+      "Ideali per pizzerie, ristoranti e attività che cercano prodotto pronto e servizio rapido.",
     tags: ["Pizzeria", "Ristorazione", "Classico"],
   },
   {
     id: 8,
     name: "Fagiolini",
     category: "Verdure cotte",
-    price: 1,
-    sizes: ["500 g", "1 kg", "2 kg", "3 kg", "4 kg"],
+    sizes: sizeOptions,
     description:
-      "Pronti per banco, cucina o somministrazione, con formato comodo e immediato.",
-    tags: ["Pratici", "Banco", "Servizio"],
+      "Pronti per banco, cucina o somministrazione, con formato chiaro e immediato.",
+    tags: ["Banco", "Servizio", "Pratici"],
   },
   {
     id: 9,
     name: "Broccoli",
     category: "Verdure cotte",
-    price: 1,
-    sizes: ["500 g", "1 kg", "2 kg", "3 kg", "4 kg"],
+    sizes: sizeOptions,
     description:
       "Preparati per garantire qualità visiva, resa e semplicità di utilizzo.",
     tags: ["Qualità", "Preparati", "Affidabili"],
@@ -101,39 +95,36 @@ const products = [
     id: 10,
     name: "Verdure miste",
     category: "Vaschette assortite",
-    price: 1,
-    sizes: ["500 g", "1 kg", "2 kg", "3 kg", "4 kg"],
+    sizes: sizeOptions,
     description:
-      "Mix di stagione e soluzioni assortite per clienti, attività e richieste personalizzate.",
-    tags: ["Mix", "Stagionali", "Personalizzabili"],
+      "Mix di stagione e soluzioni assortite per richieste personalizzate e forniture professionali.",
+    tags: ["Mix", "Stagionali", "Assortite"],
   },
   {
     id: 11,
     name: "Cavolfiore",
     category: "Verdure cotte",
-    price: 1,
-    sizes: ["500 g", "1 kg", "2 kg", "3 kg", "4 kg"],
+    sizes: sizeOptions,
     description:
-      "Proposta pratica per attività alimentari che vogliono un prodotto già pronto e ben presentato.",
+      "Pratico per attività alimentari che vogliono un prodotto già pronto e ben presentato.",
     tags: ["Pronto", "Professionale", "Comodo"],
   },
   {
     id: 12,
     name: "Spinaci",
     category: "Verdure cotte",
-    price: 1,
-    sizes: ["500 g", "1 kg", "2 kg", "3 kg", "4 kg"],
+    sizes: sizeOptions,
     description:
-      "Formati pensati per ordini diretti, continuità di servizio e gestione veloce delle preparazioni.",
-    tags: ["Formato", "Continuativo", "Ordini rapidi"],
+      "Formati pensati per ordini diretti, servizio continuativo e preparazioni veloci.",
+    tags: ["Continuativo", "Ordini rapidi", "Pratici"],
   },
 ];
 
 const catalogItems = [
-  "Melanzane",
-  "Zucchine",
-  "Peperoni",
-  "Carote",
+  "Melanzane grigliate",
+  "Zucchine grigliate",
+  "Peperoni arrostiti",
+  "Carote condite",
   "Cicoria",
   "Bietole",
   "Friarielli",
@@ -152,50 +143,46 @@ const catalogItems = [
   "Peperoni conditi",
   "Zucchine trifolate",
   "Verdure miste di stagione",
-  "Preparazioni per gastronomie",
-  "Forniture per ristoranti",
-  "Forniture per pizzerie",
-  "Forniture per caseifici",
 ];
 
 const services = [
   {
     title: "Forniture per attività",
     description:
-      "Servizio orientato a ristoranti, pizzerie, caseifici, gastronomie, negozi e operatori del settore alimentare.",
+      "Servizio dedicato a ristoranti, pizzerie, gastronomie, caseifici, negozi e operatori del settore alimentare.",
   },
   {
-    title: "Vaschette pronte all’uso",
+    title: "Vendita a peso e in vaschette",
     description:
-      "Formati da 500 g, 1 kg, 2 kg, 3 kg e 4 kg pensati per velocizzare il servizio, migliorare l’organizzazione e semplificare gli ordini.",
+      "Formati da 500 g, 1 kg, 1,5 kg, 2 kg, 3 kg, 5 kg e cartoni più grandi, in base alle esigenze del cliente.",
   },
   {
     title: "Consegne e spedizioni",
     description:
-      "Consegna gratuita entro 30 km e spedizione veloce in 24/48 ore, con contatto diretto e gestione rapida delle richieste.",
+      "Consegna gratuita entro 30 km e spedizione veloce in 24/48 ore, con contatto diretto e gestione rapida degli ordini.",
   },
 ];
 
 const faqs = [
   {
-    question: "A chi è dedicato il servizio?",
+    question: "Qual è l’ordine minimo?",
     answer:
-      "A privati e soprattutto ad attività come ristoranti, pizzerie, caseifici, gastronomie, negozi e operatori del food che cercano forniture pratiche e veloci.",
+      "L’ordine minimo è di € 5,00. Per quantitativi più alti, forniture continuative o richieste professionali è possibile concordare l’ordine in modo diretto.",
   },
   {
-    question: "Quali formati sono disponibili?",
+    question: "Come vendete i prodotti?",
     answer:
-      "Il sito è predisposto per vaschette da 500 g, 1 kg, 2 kg, 3 kg e 4 kg. In seguito si possono aggiungere formati extra e listini personalizzati.",
+      "I prodotti vengono venduti in vaschette e a peso, con formati da 500 g, 1 kg, 1,5 kg, 2 kg, 3 kg, 5 kg e cartoni per esigenze più grandi.",
+  },
+  {
+    question: "A chi è dedicato il servizio?",
+    answer:
+      "A privati e soprattutto ad attività come ristoranti, pizzerie, gastronomie, caseifici, negozi e operatori del food che cercano forniture pratiche e veloci.",
   },
   {
     question: "Come funziona la consegna?",
     answer:
-      "La consegna è gratuita entro 30 km. Fuori zona è indicata la spedizione veloce in 24/48 ore, con gestione diretta tramite WhatsApp o telefono.",
-  },
-  {
-    question: "I prezzi dove si inseriscono?",
-    answer:
-      "In questa fase ogni prodotto mostra un prezzo demo di €1,00. In seguito basta sostituirlo con il listino reale.",
+      "La consegna è gratuita entro 30 km. Fuori zona è prevista la spedizione veloce in 24/48 ore, con gestione diretta tramite WhatsApp o telefono.",
   },
 ];
 
@@ -205,34 +192,28 @@ function whatsappLink(message) {
 
 function ProductCard({ product }) {
   const [selectedSize, setSelectedSize] = useState(product.sizes[0]);
-  const orderText = `Buongiorno, vorrei ordinare ${product.name} nel formato ${selectedSize}.`;
+  const orderText = `Buongiorno, vorrei ordinare ${product.name} nel formato ${selectedSize}. Potrei avere disponibilità e prezzo?`;
 
   return (
-    <div className="group overflow-hidden rounded-[32px] border border-neutral-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
-      <div className="relative h-48 overflow-hidden bg-[linear-gradient(135deg,#ecfccb_0%,#ffffff_45%,#fff7ed_100%)]">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,197,94,0.18),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(249,115,22,0.18),transparent_26%)]" />
-        <div className="relative flex h-full flex-col justify-between p-6">
+    <div className="group overflow-hidden rounded-[30px] border border-neutral-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+      <div className="relative overflow-hidden bg-[linear-gradient(135deg,#f0fdf4_0%,#ffffff_45%,#fff7ed_100%)]">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,197,94,0.15),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(249,115,22,0.12),transparent_28%)]" />
+        <div className="relative p-6">
           <div className="flex items-start justify-between gap-4">
-            <span className="rounded-full border border-green-200 bg-white/90 px-3 py-1 text-xs font-bold text-green-800 shadow-sm">
+            <span className="rounded-full border border-green-200 bg-white/95 px-3 py-1 text-xs font-bold text-green-800 shadow-sm">
               {product.category}
             </span>
-            <div className="rounded-2xl bg-neutral-950 px-4 py-2 text-right text-white shadow-lg">
-              <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/60">
-                Prezzo base
-              </div>
-              <div className="text-2xl font-black leading-none">
-                € {product.price.toFixed(2)}
-              </div>
-            </div>
+            <span className="rounded-2xl bg-neutral-950 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-white shadow-lg">
+              Su richiesta
+            </span>
           </div>
-          <div>
-            <h4 className="max-w-[16rem] text-3xl font-black tracking-tight text-neutral-950">
-              {product.name}
-            </h4>
-            <p className="mt-2 max-w-[18rem] text-sm leading-6 text-neutral-700">
-              {product.description}
-            </p>
-          </div>
+
+          <h4 className="mt-6 text-3xl font-black tracking-tight text-neutral-950">
+            {product.name}
+          </h4>
+          <p className="mt-3 text-sm leading-7 text-neutral-700">
+            {product.description}
+          </p>
         </div>
       </div>
 
@@ -250,7 +231,7 @@ function ProductCard({ product }) {
 
         <div className="mt-6">
           <div className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-neutral-500">
-            Scegli il formato
+            Formato disponibile
           </div>
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
             {product.sizes.map((size) => (
@@ -269,7 +250,7 @@ function ProductCard({ product }) {
           </div>
         </div>
 
-        <div className="mt-6 rounded-[24px] border border-neutral-200 bg-neutral-50 p-4">
+        <div className="mt-6 rounded-[22px] border border-neutral-200 bg-neutral-50 p-4">
           <div className="flex items-center justify-between gap-4">
             <div>
               <div className="text-sm font-bold text-neutral-500">
@@ -281,10 +262,10 @@ function ProductCard({ product }) {
             </div>
             <div className="text-right">
               <div className="text-sm font-bold text-neutral-500">
-                Prezzo visibile
+                Ordine minimo
               </div>
               <div className="mt-1 text-2xl font-black text-green-700">
-                € {product.price.toFixed(2)}
+                {minimumOrder}
               </div>
             </div>
           </div>
@@ -319,9 +300,7 @@ function FaqItem({ item, isOpen, onToggle }) {
         className="flex w-full items-center justify-between gap-4 text-left"
       >
         <span className="text-lg font-bold text-neutral-950">{item.question}</span>
-        <span className="text-2xl font-light text-green-700">
-          {isOpen ? "−" : "+"}
-        </span>
+        <span className="text-2xl font-light text-green-700">{isOpen ? "−" : "+"}</span>
       </button>
       {isOpen && <p className="mt-4 leading-7 text-neutral-600">{item.answer}</p>}
     </div>
@@ -354,11 +333,14 @@ export default function App() {
                 className="h-full w-full object-contain p-1"
                 onError={(e) => {
                   e.currentTarget.style.display = "none";
-                  e.currentTarget.parentElement.innerHTML =
-                    '<div class="flex h-full items-center justify-center px-1 text-center text-[10px] font-bold text-neutral-700">LOGO</div>';
+                  if (e.currentTarget.parentElement) {
+                    e.currentTarget.parentElement.innerHTML =
+                      '<div class="flex h-full items-center justify-center px-1 text-center text-[10px] font-bold text-neutral-700">LOGO</div>';
+                  }
                 }}
               />
             </div>
+
             <div>
               <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-green-700">
                 Frutta e Verdura
@@ -391,13 +373,15 @@ export default function App() {
         <div className="relative mx-auto grid max-w-7xl gap-12 px-4 py-16 md:grid-cols-[1.05fr_0.95fr] md:px-6 md:py-24">
           <div className="flex flex-col justify-center">
             <div className="mb-5 inline-flex w-fit rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm font-semibold text-green-300 shadow-sm backdrop-blur">
-              Fruttivendolo premium • Verdure cotte • Forniture professionali
+              Verdure cotte • Vaschette • Forniture professionali
             </div>
+
             <h2 className="max-w-3xl text-4xl font-black tracking-tight text-white md:text-6xl md:leading-[1.02]">
-              Un sito che valorizza il prodotto e porta subito all’ordine.
+              Verdure pronte, formati chiari e ordine veloce.
             </h2>
+
             <p className="mt-6 max-w-2xl text-base leading-8 text-white/75 md:text-lg">
-              Frutta e Verdura di Marco Coratella prepara e distribuisce verdure cotte, vaschette miste e soluzioni pronte all’uso per ristoranti, pizzerie, caseifici, gastronomie, negozi e privati. Design premium, contatto immediato e impostazione già pronta per crescere.
+              Frutta e Verdura di Marco Coratella propone prodotti pronti, vaschette e forniture per privati, gastronomie, ristoranti, pizzerie, caseifici e attività alimentari. Struttura semplice, immagine premium e contatto diretto per ordinare bene.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -419,8 +403,8 @@ export default function App() {
 
             <div className="mt-10 grid grid-cols-2 gap-4 md:max-w-2xl md:grid-cols-4">
               {[
-                ["€ 1,00", "Prezzo demo attivo"],
-                ["500 g → 4 kg", "Formati multipli"],
+                [minimumOrder, "Ordine minimo"],
+                ["500 g → Cartone", "Formati disponibili"],
                 ["30 km", "Consegna gratuita"],
                 ["24/48h", "Spedizione rapida"],
               ].map(([value, label]) => (
@@ -441,8 +425,10 @@ export default function App() {
                   className="h-full w-full object-contain p-4"
                   onError={(e) => {
                     e.currentTarget.style.display = "none";
-                    e.currentTarget.parentElement.innerHTML =
-                      '<div class="flex h-full items-center justify-center px-6 text-center text-lg font-semibold text-neutral-500">Inserisci il logo in public/logonuovoraff.png</div>';
+                    if (e.currentTarget.parentElement) {
+                      e.currentTarget.parentElement.innerHTML =
+                        '<div class="flex h-full items-center justify-center px-6 text-center text-lg font-semibold text-neutral-500">Inserisci il logo in public/logonuovoraff.png</div>';
+                    }
                   }}
                 />
               </div>
@@ -455,9 +441,9 @@ export default function App() {
                   </div>
                 </div>
                 <div className="rounded-[24px] bg-white/10 p-5 backdrop-blur">
-                  <div className="text-sm font-bold text-orange-300">Spedizione 24/48h</div>
+                  <div className="text-sm font-bold text-orange-300">Formati chiari</div>
                   <div className="mt-2 text-sm leading-7 text-white/75">
-                    Soluzione rapida per richieste fuori zona e ordini diretti.
+                    500 g, 1 kg, 1,5 kg, 2 kg, 3 kg, 5 kg e cartoni per esigenze più grandi.
                   </div>
                 </div>
               </div>
@@ -470,9 +456,10 @@ export default function App() {
         <div className="mb-10 max-w-2xl">
           <p className="text-sm font-bold uppercase tracking-[0.24em] text-green-700">Servizi</p>
           <h3 className="mt-3 text-3xl font-black tracking-tight text-neutral-950 md:text-4xl">
-            Struttura professionale pensata per vendere e far ordinare bene.
+            Una struttura ordinata per vendere meglio e lavorare più seriamente.
           </h3>
         </div>
+
         <div className="grid gap-6 md:grid-cols-3">
           {services.map((service) => (
             <div key={service.title} className="rounded-[28px] border border-neutral-200 bg-white p-6 shadow-sm">
@@ -489,10 +476,10 @@ export default function App() {
             <div className="max-w-2xl">
               <p className="text-sm font-bold uppercase tracking-[0.24em] text-green-700">Prodotti</p>
               <h3 className="mt-3 text-3xl font-black tracking-tight text-neutral-950 md:text-4xl">
-                Vaschette e preparazioni già predisposte per ordine rapido.
+                Vaschette e preparazioni pronte per ordini rapidi.
               </h3>
               <p className="mt-4 leading-7 text-neutral-600">
-                Il sito è costruito per mostrare i prodotti in modo chiaro. I prezzi possono essere inseriti successivamente senza rifare la struttura.
+                I clienti possono scegliere il prodotto, selezionare il formato e contattarti subito per disponibilità e prezzo.
               </p>
             </div>
 
@@ -525,15 +512,15 @@ export default function App() {
         <div className="rounded-[36px] border border-neutral-200 bg-gradient-to-br from-neutral-950 to-neutral-800 p-8 text-white shadow-xl md:p-10">
           <div className="grid gap-8 md:grid-cols-[1fr_1fr] md:items-start">
             <div>
-              <p className="text-sm font-bold uppercase tracking-[0.24em] text-green-300">Catalogo estendibile</p>
+              <p className="text-sm font-bold uppercase tracking-[0.24em] text-green-300">Catalogo</p>
               <h3 className="mt-3 text-3xl font-black tracking-tight md:text-4xl">
-                Elenco iniziale completo, pronto da ampliare con i prodotti reali.
+                Prodotti principali già organizzati in modo chiaro.
               </h3>
               <p className="mt-4 leading-7 text-neutral-300">
-                Ho impostato una base commerciale solida: catalogo ampio, prodotti centrali per il business e struttura professionale per far crescere il sito passo dopo passo.
+                Questa base è già pronta per essere ampliata con nuovi prodotti, varianti, disponibilità e listini personalizzati.
               </p>
               <div className="mt-6 rounded-[24px] border border-white/10 bg-white/5 p-5 text-sm leading-7 text-neutral-200">
-                In questa fase l’elenco è pensato per coprire il nucleo dell’attività. Quando mi darai il catalogo reale, lo trasformiamo in versione definitiva con prezzi, foto e disponibilità.
+                Il sito è pensato per dare subito un’immagine più forte, più ordinata e più commerciale dell’attività.
               </div>
             </div>
 
@@ -557,18 +544,18 @@ export default function App() {
             {[
               {
                 value: "01",
-                title: "Immagine professionale",
-                text: "Grafica pulita, struttura premium e presentazione più seria rispetto a una semplice pagina improvvisata.",
+                title: "Immagine più professionale",
+                text: "Grafica pulita, struttura premium e presentazione più seria rispetto a una pagina improvvisata.",
               },
               {
                 value: "02",
-                title: "Ordine rapido",
+                title: "Ordine più semplice",
                 text: "Ogni prodotto è già pensato per portare il cliente verso WhatsApp e telefono senza passaggi inutili.",
               },
               {
                 value: "03",
-                title: "Base evolutiva",
-                text: "Questa versione è una base master: si può trasformare in mini e-commerce, dashboard ordini o sito completo con catalogo avanzato.",
+                title: "Base pronta per crescere",
+                text: "Il sito può essere ampliato con prezzi reali, nuovi formati, campagne social e gestione più avanzata dei prodotti.",
               },
             ].map((item) => (
               <div key={item.value} className="rounded-[28px] border border-neutral-200 bg-white p-6 shadow-sm">
@@ -587,13 +574,14 @@ export default function App() {
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.24em] text-green-700">Come ordinare</p>
               <h3 className="mt-3 text-3xl font-black tracking-tight text-neutral-950 md:text-4xl">
-                Semplice per il cliente, ordinato per l’attività.
+                Semplice per il cliente, comodo per l’attività.
               </h3>
+
               <div className="mt-8 space-y-5">
                 {[
                   "Il cliente sceglie il prodotto o la preparazione che gli interessa.",
-                  "Seleziona il formato da 500 g, 1 kg, 2 kg, 3 kg o 4 kg e contatta l’attività.",
-                  "L’ordine viene gestito rapidamente via telefono o WhatsApp.",
+                  "Seleziona il formato tra 500 g, 1 kg, 1,5 kg, 2 kg, 3 kg, 5 kg o cartone.",
+                  "Contatta direttamente l’attività tramite WhatsApp o telefono.",
                   "Consegna gratuita entro 30 km oppure spedizione veloce in 24/48 ore.",
                 ].map((step, index) => (
                   <div key={step} className="flex gap-4">
@@ -610,11 +598,11 @@ export default function App() {
               <p className="text-sm font-bold uppercase tracking-[0.24em] text-green-300">Punti forti</p>
               <div className="mt-6 grid gap-4">
                 {[
-                  "Verdure cotte pronte ogni giorno",
-                  "Forniture per ristoranti, pizzerie, caseifici e negozi",
-                  "Contatto diretto senza passaggi complessi",
-                  "Impostazione già pronta per listino e prodotti reali",
-                  "Sito elegante, chiaro e facilmente migliorabile",
+                  "Ordine minimo da € 5,00",
+                  "Vendita in vaschette, a peso e in cartoni",
+                  "Contatto diretto senza passaggi complicati",
+                  "Forniture per privati e attività",
+                  "Sito pulito, premium e già pronto per crescere",
                 ].map((point) => (
                   <div key={point} className="rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-sm font-medium text-white/95">
                     {point}
@@ -634,6 +622,7 @@ export default function App() {
               Risposte chiare per clienti privati e attività.
             </h3>
           </div>
+
           <div className="mt-10 grid gap-4">
             {faqs.map((item, index) => (
               <FaqItem
@@ -655,7 +644,7 @@ export default function App() {
               Contatto diretto per ordini, disponibilità e forniture.
             </h3>
             <p className="mt-4 max-w-2xl leading-7 text-neutral-600">
-              Richiedi informazioni su prodotti, formati, vaschette miste, forniture ricorrenti o disponibilità giornaliera. Il contatto è pensato per essere rapido e immediato.
+              Richiedi informazioni su prodotti, formati, vaschette miste, forniture ricorrenti o disponibilità giornaliera.
             </p>
 
             <div className="mt-8 grid gap-4 md:grid-cols-2">
@@ -677,7 +666,7 @@ export default function App() {
           <div className="rounded-[36px] border border-green-200 bg-[linear-gradient(180deg,#f0fdf4_0%,#dcfce7_100%)] p-8 shadow-sm md:p-10">
             <p className="text-sm font-bold uppercase tracking-[0.24em] text-green-800">Contatta subito</p>
             <h3 className="mt-3 text-3xl font-black tracking-tight text-neutral-950">
-              Pronto per essere collegato a WhatsApp, Instagram e campagne social.
+              WhatsApp, telefono e Instagram già pronti per ricevere richieste.
             </h3>
 
             <div className="mt-8 space-y-4">
@@ -706,7 +695,7 @@ export default function App() {
             </div>
 
             <div className="mt-8 rounded-[24px] border border-green-200 bg-white p-5 text-sm leading-7 text-neutral-700">
-              Consegna gratuita entro 30 km. Per zone esterne è già previsto il messaggio commerciale “spedizione veloce 24/48h”.
+              Ordine minimo {minimumOrder}. Consegna gratuita entro 30 km. Per zone esterne è prevista la spedizione veloce in 24/48 ore.
             </div>
           </div>
         </div>
