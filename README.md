@@ -1,33 +1,17 @@
 # Frutta e Verdura di Marco Coratella
 
-Versione potenziata del sito frontend realizzata su base React + Vite.
+Sito vetrina e vendita online dedicato a frutta fresca, verdura fresca, offerte di stagione e box miste.
 
-## Cosa contiene
+## Contenuti principali
 
-- homepage più professionale e strutturata
-- catalogo con ricerca e filtri
-- reparti organizzati
-- carrello frontend con quantità modificabili
-- checkout con dati cliente e note ordine
-- generazione richiesta ordine via WhatsApp
-- galleria immagini reali
-- base responsive ottimizzata per mobile
-- struttura pronta per collegamento futuro a pagamento carta reale
+- homepage con offerte in evidenza
+- reparti organizzati per frutta, verdura, stagione e box
+- catalogo con ricerca rapida
+- carrello con riepilogo ordine
+- modulo ordine con pagamento con carta
+- spedizione express 24/36h
+- contatti e richiesta ordine via WhatsApp
 
-## Avvio in locale
+## Descrizione
 
-```bash
-npm install
-npm run dev
-```
-
-## Build produzione
-
-```bash
-npm run build
-```
-
-## Nota importante
-
-Il pagamento con carta non è stato inventato in modo finto dentro il file.
-La UI checkout è predisposta, ma per incasso reale serve collegare un gateway come Stripe o altra piattaforma ecommerce/backend.
+Il sito è pensato per presentare il negozio in modo ordinato, chiaro e professionale, con una navigazione semplice sia da desktop che da smartphone.
